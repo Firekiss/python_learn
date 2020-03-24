@@ -11,8 +11,8 @@ class WriteProcess(Process):
     def __init__(self, process_num, lock, *args, **kwargs):
         self.process_num = process_num
         self.lock = lock
-        super().__init__(*args, **kwargs)
-
+        super().__init__(*args, **kwargs )
+ 
 
     def run(self):
         with self.lock:
@@ -24,7 +24,7 @@ class WriteProcess(Process):
                     time.sleep(random.randint(2, 5))
     
 
-if __name__ == '__main__':
+if __name__ == '__main__':  
     for i in range(5):
         wp = WriteProcess(i, lock)
         wp.start()
