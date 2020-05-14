@@ -6,5 +6,5 @@ pool = redis.ConnectionPool(
     port = 6379,
     password = "1q2w3e4r",
     db = 0,
-    max_connections = 20
+    max_connections = 200
 )

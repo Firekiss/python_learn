@@ -5,4 +5,3 @@ con = redis.Redis(connection_pool = pool)
 empnos = con.smembers("empno")
 print(empnos)
 del con
-
