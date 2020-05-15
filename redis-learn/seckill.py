@@ -51,7 +51,6 @@ def main():
     print(Fore.LIGHTGREEN_EX, '\n秒杀结束!')
     print(Style.RESET_ALL)
 
-
 if __name__ == '__main__':
     main()
 
